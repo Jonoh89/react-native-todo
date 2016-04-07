@@ -1,0 +1,10 @@
+{
+  "parser": "babel-eslint",
+  "parser-options": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "extends": "airbnb"
+}
+
