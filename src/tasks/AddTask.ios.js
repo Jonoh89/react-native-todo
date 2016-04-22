@@ -41,9 +41,9 @@ function AddTask({ text, enabled, onTextChange, onAddTask }) {
         editable={enabled}
         style={[styles.newTask, !enabled && styles.disabled]}
         placeholder="Add Task"
-        onChangeText={ onTextChange }
-        onSubmitEditing={ onAddTask }
-        value={ text }
+        onChangeText={onTextChange}
+        onSubmitEditing={onAddTask}
+        value={text}
       />
     </View>
   );

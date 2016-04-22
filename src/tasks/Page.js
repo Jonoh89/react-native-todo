@@ -59,14 +59,14 @@ class TasksPage extends Component {
     const { newTaskText, dataStore } = this.state;
 
     return (
-      <View style={ styles.view }>
+      <View style={styles.view}>
         <AddTask
-          text={ newTaskText }
-          enabled={ isConnected }
-          onTextChange={ this.onNewTaskTextChange }
-          onAddTask={ this.onAddNewTask }
+          text={newTaskText}
+          enabled={isConnected}
+          onTextChange={this.onNewTaskTextChange}
+          onAddTask={this.onAddNewTask}
         />
-        <Tasks tasks={ dataStore } />
+        <Tasks tasks={dataStore} />
       </View>
     );
   }

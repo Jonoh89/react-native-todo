@@ -16,14 +16,14 @@ const styles = StyleSheet.create({
   },
 });
 
-const renderRow = rowData => <Task task={ rowData } />;
+const renderRow = rowData => <Task task={rowData} />;
 
 function Tasks({ tasks }) {
   return (
     <ListView
-      styles={ styles.list }
-      dataSource={ tasks }
-      renderRow={ renderRow }
+      styles={styles.list}
+      dataSource={tasks}
+      renderRow={renderRow}
     />
   );
 }
