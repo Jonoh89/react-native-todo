@@ -7,7 +7,8 @@ import React, {
 } from 'react-native';
 import { connect } from 'react-redux';
 import * as taskActions from '../redux/tasks/actions';
-import Checkbox from '../components/checkbox';
+import Checkbox from '../components/Checkbox';
+import Separator from '../components/Separator';
 
 const propTypes = {
   task: PropTypes.object.isRequired,
@@ -23,12 +24,6 @@ const styles = StyleSheet.create({
   checkbox: {
     marginRight: 10,
   },
-  separator: {
-    height: StyleSheet.hairlineWidth,
-    backgroundColor: '#bbbbbb',
-    marginLeft: 15,
-    marginRight: 15,
-  },
 });
 
 function Task({ task, updateTask }) {
@@ -38,11 +33,13 @@ function Task({ task, updateTask }) {
     <View>
       <TouchableHighlight onPress={onPress}>
         <View style={styles.row}>
-          <Checkbox style={styles.checkbox} checked={!!task.completed} />
+          <View style={styles.checkbox}>
+            <Checkbox checked={!!task.completed} />
+          </View>
           <Text>{task.title}</Text>
         </View>
       </TouchableHighlight>
-      <View style={styles.separator} />
+      <Separator />
     </View>
   );
 }
