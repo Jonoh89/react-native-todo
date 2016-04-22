@@ -1,6 +1,7 @@
 # Todo App using React Native, Redux, Firebase and Enzyme
 
 [![Dependency Status](https://david-dm.org/jonoh89/react-native-todo.svg)](https://david-dm.org/jonoh89/react-native-todo)
+[![Circle CI](https://circleci.com/gh/Jonoh89/react-native-todo.svg?style=svg)](https://circleci.com/gh/Jonoh89/react-native-todo)
 
 Requires https://github.com/rnpm/rnpm for Checkbox Icon, install using:  
 ```
